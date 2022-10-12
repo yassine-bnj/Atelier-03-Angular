@@ -47,10 +47,10 @@ export class ProduitService {
 
   trierProduits() {
     this.produits = this.produits.sort((n1, n2) => {
-      if (n1.idProduit > n2.idProduit) {
+      if (n1.idProduit! > n2.idProduit!) {
         return 1;
       }
-      if (n1.idProduit < n2.idProduit) {
+      if (n1.idProduit! < n2.idProduit!) {
         return -1;
       }
       return 0;
